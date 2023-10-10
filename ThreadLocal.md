@@ -15,7 +15,7 @@
 ## 示意图
 
 ThreadLocal 和 Thread 之间的关系如下：
-![[threadLocal.png]]
+![threadLocal.png](./assets/threadLocal.png)
 
 Thread 内部维护一个 ThreadLocalMap，其键为 ThreadLocal 类型，值为调用者想存储的类型。当创建多个 ThreadLocal 时，ThreadLocal 以自身为 key 到 Thread.ThreadLocalMap 中取出对应的值。
 
